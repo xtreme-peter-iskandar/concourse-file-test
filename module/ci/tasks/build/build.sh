@@ -11,3 +11,4 @@ shasum -v
 openssl base64 -d -in file_base64.file -out file.file
 
 echo `shasum file.file | awk '{print $1}'`
+echo `openssl dgst -sha1 file.file`
