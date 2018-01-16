@@ -8,6 +8,7 @@ echo `shasum file_base64.file | awk '{print $1}'`
 
 shasum -v
 
+echo `shasum concourse-release/module/files/testfile`
 openssl base64 -d -in file_base64.file -out file.file
 
 echo `shasum file.file | awk '{print $1}'`
