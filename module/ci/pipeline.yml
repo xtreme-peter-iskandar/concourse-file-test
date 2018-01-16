@@ -1,0 +1,16 @@
+resources:
+- name: concourse-release
+  type: git
+  source:
+    uri: https://github.com/xtreme-peter-iskandar/concourse-file-test.git
+    branch: master
+
+jobs:
+- name: build
+  plan:
+  - get: concourse-release
+    task: build
+    file: concourse-release/module/ci/tasks/build/build.yml
+    params:
+      CHECKSUM: {{checksum}}
+      BASE64_FILE_DATA: {{base64_file_data}}
