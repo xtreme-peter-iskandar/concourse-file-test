@@ -45,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/module/ci/tasks/build/build.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -290,12 +290,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516129073733</updated>
       <workItem from="1516129075092" duration="2455000" />
-      <workItem from="1516132123215" duration="3865000" />
+      <workItem from="1516132123215" duration="3941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6320000" />
+    <option name="totallyTimeSpent" value="6396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1336" extended-state="0" />
@@ -423,7 +423,7 @@
     <entry file="file://$PROJECT_DIR$/module/ci/tasks/build/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="28" />
           <folding />
         </state>
       </provider>
