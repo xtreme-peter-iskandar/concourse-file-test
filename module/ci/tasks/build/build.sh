@@ -8,7 +8,7 @@ echo -n $BASE64_FILE_DATA > file_base64.file
 
 echo `openssl dgst -sha1 file_base64.file`
 
-openssl base64 -d -in file_base64.file -out file.file
+openssl base64 -A -d -in file_base64.file -out file.file
 
 echo `openssl dgst -sha1 file.file`
 #echo `shasum file.file | awk '{print $1}'`
