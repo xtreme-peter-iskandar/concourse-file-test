@@ -9,7 +9,7 @@ jobs:
 - name: build
   plan:
   - get: concourse-release
-    task: build
+  - task: build
     file: concourse-release/module/ci/tasks/build/build.yml
     params:
       CHECKSUM: {{checksum}}
