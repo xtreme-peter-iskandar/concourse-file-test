@@ -8,3 +8,5 @@ echo `shasum file_base64.file | awk '{print $1}'`
 
 
 openssl base64 -d -in file_base64.file -out file.file
+
+echo `shasum file.file | awk '{print $1}'`
