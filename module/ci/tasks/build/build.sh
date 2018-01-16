@@ -8,8 +8,9 @@ echo -n $BASE64_FILE_DATA > file_base64.file
 
 echo `openssl dgst -sha1 file_base64.file`
 
-#openssl base64 -A -in concourse-release/module/files/testfile -out testbase64.file
+openssl base64 -d -in file_base64.file -out file.file
 
+echo `openssl dgst -sha1 file.file`
 #echo `shasum file.file | awk '{print $1}'`
 #echo `shasum testbase64.file`
 #echo `openssl dgst -sha1 testbase64.file`
