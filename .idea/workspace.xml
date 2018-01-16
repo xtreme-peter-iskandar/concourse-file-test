@@ -21,7 +21,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creds.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="creds.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/creds.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/ci/tasks/build/build.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="61" />
+            <state relative-caret-position="144">
+              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/module/ci/tasks/build/build.yml" />
         <option value="$PROJECT_DIR$/module/ci/pipeline.yml" />
         <option value="$PROJECT_DIR$/module/.gitignore" />
-        <option value="$PROJECT_DIR$/module/ci/tasks/build/build.sh" />
         <option value="$PROJECT_DIR$/module/creds.yml" />
+        <option value="$PROJECT_DIR$/module/ci/tasks/build/build.sh" />
       </list>
     </option>
   </component>
@@ -291,12 +291,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516129073733</updated>
       <workItem from="1516129075092" duration="2455000" />
-      <workItem from="1516132123215" duration="4386000" />
+      <workItem from="1516132123215" duration="4481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6841000" />
+    <option name="totallyTimeSpent" value="6936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="956" y="23" width="1604" height="1412" extended-state="0" />
@@ -405,6 +405,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module/creds.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="5482" lean-forward="false" selection-start-line="2" selection-start-column="5482" selection-end-line="2" selection-end-column="5482" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/ci/tasks/build/build.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -415,16 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/ci/tasks/build/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/creds.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="5482" lean-forward="false" selection-start-line="2" selection-start-column="5482" selection-end-line="2" selection-end-column="5482" />
+        <state relative-caret-position="144">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
