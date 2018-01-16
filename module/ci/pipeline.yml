@@ -14,5 +14,5 @@ jobs:
     params:
       CHECKSUM: {{checksum}}
       CHECKSUM_BASE64: {{checksum-b64}}
-      BASE64_FILE_DATA: {{base64_file_data}}
+      BASE64_FILE_DATA: {{base64-file-data}}
 
