@@ -13,4 +13,6 @@ jobs:
     file: concourse-release/module/ci/tasks/build/build.yml
     params:
       CHECKSUM: {{checksum}}
+      CHECKSUM_BASE64: {{checksum-b64}}
       BASE64_FILE_DATA: {{base64_file_data}}
+
