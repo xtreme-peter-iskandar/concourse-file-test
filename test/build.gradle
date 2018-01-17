@@ -17,7 +17,7 @@ dependencies {
 task printEnv() {
     doLast {
 
-        println System.getenv( 'KEYSTORE_FILE_PATH')
+        println System.getenv('KEYSTORE_FILE_PATH')
 //        print(home)
     }
 }
