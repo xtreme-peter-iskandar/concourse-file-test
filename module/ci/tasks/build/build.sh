@@ -24,6 +24,6 @@ cd concourse-release/test
 pwd
 ls -la
 echo $KEYSTORE_FILE_PATH
-./gradlew printEnv
+./gradlew copyKeystores
 
 ls -la
