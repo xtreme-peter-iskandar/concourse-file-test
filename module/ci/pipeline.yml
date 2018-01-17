@@ -12,7 +12,32 @@ jobs:
   - task: build
     file: concourse-release/module/ci/tasks/build/build.yml
     params:
-      CHECKSUM: {{checksum}}
-      CHECKSUM_BASE64: {{checksum-b64}}
-      BASE64_FILE_DATA: {{base64-file-data}}
+      CERTS_SAMLKEYSTORE_BASE64_DATA: {{certs-samlkeystore-base64-data}}
+      CERTS_SAMLKEYSTORE_BASE64_SHA1: {{certs-samlkeystore-base64-sha1}}
+      CERTS_SAMLKEYSTORE_ORIGINAL_FILENAME: {{certs-samlkeystore-original-filename}}
+      CERTS_SAMLKEYSTORE_ORIGINAL_SHA1: {{certs-samlkeystore-original-sha1}}
+      OKTA_XML_1_BASE64_DATA: {{okta-xml-1-base64-data}}
+      OKTA_XML_1_BASE64_SHA1: {{okta-xml-1-base64-sha1}}
+      OKTA_XML_1_ORIGINAL_FILENAME: {{okta-xml-1-original-filename}}
+      OKTA_XML_1_ORIGINAL_SHA1: {{okta-xml-1-original-sha1}}
+      OKTA_XML_2_BASE64_DATA: {{okta-xml-2-base64-data}}
+      OKTA_XML_2_BASE64_SHA1: {{okta-xml-2-base64-sha1}}
+      OKTA_XML_2_ORIGINAL_FILENAME: {{okta-xml-2-original-filename}}
+      OKTA_XML_2_ORIGINAL_SHA1: {{okta-xml-2-original-sha1}}
+      OKTA_XML_3_BASE64_DATA: {{okta-xml-3-base64-data}}
+      OKTA_XML_3_BASE64_SHA1: {{okta-xml-3-base64-sha1}}
+      OKTA_XML_3_ORIGINAL_FILENAME: {{okta-xml-3-original-filename}}
+      OKTA_XML_3_ORIGINAL_SHA1: {{okta-xml-3-original-sha1}}
+      SFDC_CERTS_SFDC_BASE64_DATA: {{sfdc-certs-sfdc-base64-data}}
+      SFDC_CERTS_SFDC_BASE64_SHA1: {{sfdc-certs-sfdc-base64-sha1}}
+      SFDC_CERTS_SFDC_ORIGINAL_FILENAME: {{sfdc-certs-sfdc-original-filename}}
+      SFDC_CERTS_SFDC_ORIGINAL_SHA1: {{sfdc-certs-sfdc-original-sha1}}
+      SFDC_CERTS_SFDC_PROD_BASE64_DATA: {{sfdc-certs-sfdc-prod-base64-data}}
+      SFDC_CERTS_SFDC_PROD_BASE64_SHA1: {{sfdc-certs-sfdc-prod-base64-sha1}}
+      SFDC_CERTS_SFDC_PROD_ORIGINAL_FILENAME: {{sfdc-certs-sfdc-prod-original-filename}}
+      SFDC_CERTS_SFDC_PROD_ORIGINAL_SHA1: {{sfdc-certs-sfdc-prod-original-sha1}}
+      SFDC_CERTS_SFDC_SANDBOX_BASE64_DATA: {{sfdc-certs-sfdc-sandbox-base64-data}}
+      SFDC_CERTS_SFDC_SANDBOX_BASE64_SHA1: {{sfdc-certs-sfdc-sandbox-base64-sha1}}
+      SFDC_CERTS_SFDC_SANDBOX_ORIGINAL_FILENAME: {{sfdc-certs-sfdc-sandbox-original-filename}}
+      SFDC_CERTS_SFDC_SANDBOX_ORIGINAL_SHA1: {{sfdc-certs-sfdc-sandbox-original-sha1}}
 
