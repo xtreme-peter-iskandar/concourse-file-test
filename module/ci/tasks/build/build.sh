@@ -27,11 +27,13 @@ processFile(){
         echo "SHAs do not match for $FILENAME"
         exit 1
     fi
-
-    ls -la
 }
 
 processFile $CERTS_SAMLKEYSTORE_BASE64_DATA $CERTS_SAMLKEYSTORE_ORIGINAL_FILENAME $CERTS_SAMLKEYSTORE_BASE64_SHA1 $CERTS_SAMLKEYSTORE_ORIGINAL_SHA1
+
+
+rm *.base64
+ls -la
 
 
 
