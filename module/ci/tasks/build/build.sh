@@ -12,9 +12,10 @@ processFile(){
 
     echo $DATA > $FILENAME_BASE64
     BASE64_DIGEST=`openssl dgst -sha1 $FILENAME_BASE64 | awk {'print $2'} `
-    if [[ "$BASE64_SHA" ==  "$BASE64_DIGEST" ]];
+    if [[ "$BASE64_SHA" !=  "$BASE64_DIGEST" ]];
     then
-        echo MATCHES
+        echo "Base 64 SHAs do not match for $FILENAME"
+        exit 1
     fi
 }
 
