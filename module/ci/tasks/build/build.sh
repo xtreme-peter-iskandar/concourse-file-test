@@ -25,4 +25,4 @@ ls -la
 echo $KEYSTORE_FILE_PATH
 ./gradlew copyKeystores
 
-ls -la build
+ls -la build/generated-resources/keystores

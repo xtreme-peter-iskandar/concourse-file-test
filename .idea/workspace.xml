@@ -91,8 +91,8 @@
       <file leaf-file-name="build.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/ci/tasks/build/build.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="486">
+              <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -678,12 +678,12 @@
       <updated>1516129073733</updated>
       <workItem from="1516129075092" duration="2455000" />
       <workItem from="1516132123215" duration="5996000" />
-      <workItem from="1516203604130" duration="2940000" />
+      <workItem from="1516203604130" duration="2987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11391000" />
+    <option name="totallyTimeSpent" value="11438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="23" width="1847" height="1412" extended-state="0" />
@@ -875,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/ci/tasks/build/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding />
         </state>
       </provider>
