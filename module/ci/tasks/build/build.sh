@@ -13,6 +13,6 @@ echo `openssl dgst -sha1 file.file`
 
 KEYSTORE_FILE_PATH=file.file
 
-cd test
+cd ../../../../test
 
 ./gradlew printEnv
