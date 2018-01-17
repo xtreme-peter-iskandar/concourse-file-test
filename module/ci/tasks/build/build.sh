@@ -15,4 +15,4 @@ KEYSTORE_FILE_PATH=file.file
 
 cd test
 
-./gradle printEnv
+./gradlew printEnv
