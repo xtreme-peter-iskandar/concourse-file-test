@@ -22,3 +22,14 @@ task printEnv() {
 //        print(home)
     }
 }
+
+task copyKeystores(type: Copy) {
+    from("$System.env.KEYSTORE_FILE_PATH") {
+        include "*.jks"
+    }
+    from("$System.env.CERTS_FILE_PATH") {
+        include "samlKeystore.jks"
+    }
+    into("${buildDir}/generated-resources/keystores")
+}
+
