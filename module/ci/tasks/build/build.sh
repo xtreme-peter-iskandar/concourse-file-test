@@ -8,13 +8,23 @@ processFile(){
     FILENAME=$2
     FILENAME_BASE64=`echo -n $FILENAME.base64`
     BASE64_SHA=$3
-    echo $4
+    ORIGINAL_SHA=$4
 
     echo $DATA > $FILENAME_BASE64
     BASE64_DIGEST=`openssl dgst -sha1 $FILENAME_BASE64 | awk {'print $2'} `
     if [[ "$BASE64_SHA" !=  "$BASE64_DIGEST" ]];
     then
         echo "Base 64 SHAs do not match for $FILENAME"
+        exit 1
+    fi
+
+    openssl base64 -A -d -in $FILENAME_BASE64 -out $FILENAME
+
+    DIGEST=`openssl dgst -sha1 $FILENAME | awk {'print $2'}`
+
+    if [[ "$DIGEST" !=  "$ORIGINAL_SHA" ]];
+    then
+        echo "SHAs do not match for $FILENAME"
         exit 1
     fi
 }
