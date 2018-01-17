@@ -7,11 +7,15 @@ processFile(){
     DATA=$1
     FILENAME=$2
     FILENAME_BASE64=`echo -n $FILENAME.base64`
-    echo $3
+    BASE64_SHA=$3
     echo $4
 
     echo -n $DATA > $FILENAME_BASE64
-    echo `openssl dgst -sha1 $FILENAME_BASE64`
+    BASE64_DIGEST=`openssl dgst -sha1 $FILENAME_BASE64 | awk {'print $2'} `
+    if [[ $BASE64_SHA -eq  $BASE64_DIGEST ]];
+    then
+        echo MATCHES
+    fi
 }
 
 processFile $CERTS_SAMLKEYSTORE_BASE64_DATA $CERTS_SAMLKEYSTORE_ORIGINAL_FILENAME $CERTS_SAMLKEYSTORE_BASE64_SHA1 $CERTS_SAMLKEYSTORE_ORIGINAL_SHA1
