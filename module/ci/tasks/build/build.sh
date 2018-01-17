@@ -10,7 +10,7 @@ processFile(){
     BASE64_SHA=$3
     ORIGINAL_SHA=$4
 
-    echo $DATA > $FILENAME_BASE64
+    echo -n $DATA > $FILENAME_BASE64
     BASE64_DIGEST=`openssl dgst -sha1 $FILENAME_BASE64 | awk {'print $2'} `
     if [[ "$BASE64_SHA" !=  "$BASE64_DIGEST" ]];
     then
@@ -27,6 +27,8 @@ processFile(){
         echo "SHAs do not match for $FILENAME"
         exit 1
     fi
+
+    ls -la
 }
 
 processFile $CERTS_SAMLKEYSTORE_BASE64_DATA $CERTS_SAMLKEYSTORE_ORIGINAL_FILENAME $CERTS_SAMLKEYSTORE_BASE64_SHA1 $CERTS_SAMLKEYSTORE_ORIGINAL_SHA1
