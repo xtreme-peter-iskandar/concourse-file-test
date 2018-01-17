@@ -11,7 +11,7 @@ openssl base64 -A -d -in file_base64.file -out file.file
 
 echo `openssl dgst -sha1 file.file`
 
-KEYSTORE_FILE_PATH=file.file
+export KEYSTORE_FILE_PATH=file.file
 
 cd concourse-release/test
 pwd
