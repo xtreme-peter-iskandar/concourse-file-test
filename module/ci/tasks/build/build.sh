@@ -10,7 +10,7 @@ processFile(){
     BASE64_SHA=$3
     echo $4
 
-    echo -n $DATA > $FILENAME_BASE64
+    echo $DATA > $FILENAME_BASE64
     BASE64_DIGEST=`openssl dgst -sha1 $FILENAME_BASE64 | awk {'print $2'} `
     if [[ "$BASE64_SHA" ==  "$BASE64_DIGEST" ]];
     then
